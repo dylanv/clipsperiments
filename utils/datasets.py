@@ -95,10 +95,9 @@ def get_intel_scene_dataset(split: str = "train") -> Dict[str, List[Path]]:
 
 
 def get_fruits_dataset(split: str = "train") -> Dict[str, List[Path]]:
-    """Load the Intel scene dataset from kaggle
+    """Load the fruits dataset from kaggle
 
-    https://www.kaggle.com/datasets/puneet6060/intel-image-classification
-    Originally from a intel sponsored hackathon on https://datahack.analyticsvidhya.com/
+    https://www.kaggle.com/datasets/moltean/fruits
 
     Returns
     -------
