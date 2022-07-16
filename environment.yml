@@ -1,0 +1,17 @@
+name: clip
+channels:
+  - conda-forge
+dependencies:
+  - python=3.9
+  - numpy
+  - conda-forge::cudatoolkit=11.6
+  - pytorch::pytorch
+  - matplotlib
+  - scikit-learn
+  - scikit-image
+  - pip
+  - jupyter
+  - kaggle
+  - pip:
+    - transformers[torch]
+    - datasets
