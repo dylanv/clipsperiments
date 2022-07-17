@@ -146,8 +146,8 @@ def get_fruits_dataset(split: str = "train") -> Dict[str, List[Path]]:
             for sub_folder in (fruit_root_folder / folder).glob("*"):
                 cls = "_".join(sub_folder.stem.split("_")[:-1])
                 print(f"Moving {sub_folder.stem} to {cls}")
-                os.makedirs(data_dir / folder / cls, exist_ok=True)
-                shutil.move(sub_folder, data_dir / folder / cls / sub_folder.stem)
+                os.makedirs(data_dir / folder.lower() / cls, exist_ok=True)
+                shutil.move(sub_folder, data_dir / folder.lower() / cls / sub_folder.stem)
     # Check the data and build our class map
     class_map = {}
     split_folder = data_dir / split

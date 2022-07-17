@@ -12,6 +12,9 @@ dependencies:
   - pip
   - jupyter
   - kaggle
+  - umap-learn
+  - altair
+  - pandas
   - pip:
     - transformers[torch]
     - datasets
