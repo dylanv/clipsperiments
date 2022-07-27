@@ -3,7 +3,7 @@ from typing import List, Dict, Tuple
 
 import numpy as np
 import torch
-from PIL import Image
+from PIL import Image, UnidentifiedImageError
 from transformers import CLIPModel, CLIPProcessor
 
 
@@ -34,6 +34,7 @@ def evaluate_prompt_set_for_classes(
     predictions, labels
         The predicted and actual class labels
     """
+    UnidentifiedImageError
     preds = []
     labels = []
     with torch.no_grad():
